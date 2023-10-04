@@ -1,0 +1,92 @@
+package cargoManagement;
+
+import administration.Customer;
+import cargo.Hazard;
+import cargo.LiquidAndDryBulkCargo;
+
+import java.math.BigDecimal;
+import java.time.Duration;
+import java.util.Collection;
+import java.util.Date;
+import java.util.HashSet;
+
+class LiquidAndDryBulkCargoImpl implements LiquidAndDryBulkCargo, CargoInternal {
+
+    private final static long serialVersionUID = 1L;
+    private final Customer owner;
+    private final Date insertDate;
+    private int storageLocation;
+    private final BigDecimal value;
+    private final HashSet<Hazard> hazards;
+    private final int grainSize;
+    private final boolean pressurized;
+    private Date lastInspectionDate;
+
+    public LiquidAndDryBulkCargoImpl(Customer owner, int storageLocation, Date insertDate, BigDecimal value, HashSet<Hazard> hazards, boolean pressurized, int grainSize) {
+        this.owner = owner;
+        this.storageLocation = storageLocation;
+        this.insertDate = insertDate;
+        this.value = value;
+        this.hazards = hazards;
+        this.grainSize = grainSize;
+        this.pressurized = pressurized;
+    }
+
+    @Override
+    public Customer getOwner() {
+        return owner;
+    }
+
+    @Override
+    public Duration getDurationOfStorage() {
+        return Duration.between(insertDate.toInstant(), new Date().toInstant());
+    }
+
+    @Override
+    public Date getLastInspectionDate() {
+        return lastInspectionDate;
+    }
+
+    public void setLastInspectionDate(Date lastInspectionDate) {
+        this.lastInspectionDate = lastInspectionDate;
+    }
+
+    @Override
+    public int getStorageLocation() {
+        return storageLocation;
+    }
+
+    @Override
+    public void setStorageLocation(int storageLocation) {
+        this.storageLocation = storageLocation;
+    }
+
+    @Override
+    public BigDecimal getValue() {
+        return value;
+    }
+
+    @Override
+    public Collection<Hazard> getHazards() {
+        return hazards;
+    }
+
+    @Override
+    public int getGrainSize() {
+        return grainSize;
+    }
+
+    @Override
+    public boolean isPressurized() {
+        return pressurized;
+    }
+
+    public Date getInsertDate() {
+        return insertDate;
+    }
+
+    @Override
+    public String toString() {
+        return "customer: " + owner.getName() + ", storage location: " + storageLocation + ", duration of storage: " + getDurationOfStorage() + ", last inspection date: " + lastInspectionDate;
+    }
+}

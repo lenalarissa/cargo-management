@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <MenuBar prefHeight="27.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="customer">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#changeToICreateCustomer" text="create" />
+                  <MenuItem mnemonicParsing="false" onAction="#changeToDeleteCustomer" text="delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="cargo">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#changeToCreateCargo" text="create" />
+                  <MenuItem mnemonicParsing="false" onAction="#changeToUpdateCargo" text="update" />
+                  <MenuItem mnemonicParsing="false" onAction="#changeToDeleteCargo" text="delete" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="filter cargos">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#readAllCargos" text="All Cargos" />
+                  <MenuItem mnemonicParsing="false" onAction="#readDryBulkAndUnitisedCargo" text="DryBulkAndUnitisedCargo" />
+                  <MenuItem mnemonicParsing="false" onAction="#readDryBulkCargo" text="DryBulkCargo" />
+                  <MenuItem mnemonicParsing="false" onAction="#readLiquidAndDryBulkCargo" text="LiquidAndDryBulkCargo" />
+                  <MenuItem mnemonicParsing="false" onAction="#readLiquidBulkAndUnitisedCargo" text="LiquidBulkAndUnitisedCargo" />
+                  <MenuItem mnemonicParsing="false" onAction="#readLiquidBulkCargo" text="LiquidBulkCargo" />
+                  <MenuItem mnemonicParsing="false" onAction="#readUnitisedCargo" text="UnitisedCargo" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="persistence">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#saveJOS" text="save - JOS" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadJOS" text="load - JOS" />
+                  <MenuItem mnemonicParsing="false" onAction="#saveJBP" text="save - JBP" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadJBP" text="load - JBP" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.5" layoutY="170.0" orientation="VERTICAL" prefHeight="330.0" prefWidth="868.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="170.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="198.0" prefWidth="578.0">
+               <children>
+                  <TableView fx:id="cargoTable" prefHeight="165.0" prefWidth="867.0" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="customer" prefWidth="215.43500423431396" text="customer" />
+                      <TableColumn fx:id="storageLocation" prefWidth="147.11651611328125" text="storage location" />
+                        <TableColumn fx:id="durationOfStorage" minWidth="0.0" prefWidth="223.93829345703125" text="duration of storage" />
+                        <TableColumn fx:id="inspectionDate" minWidth="0.0" prefWidth="280.0" text="inspection date" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="customerTable" layoutY="2.0" prefHeight="122.0" prefWidth="598.0" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="customerName" prefWidth="435.0" text="customer name" />
+                        <TableColumn fx:id="numberOfCargos" prefWidth="432.0" text="number of cargos" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <AnchorPane layoutX="-7.0" layoutY="24.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="147.0" prefWidth="884.0" AnchorPane.leftAnchor="-7.0" AnchorPane.rightAnchor="-9.0" AnchorPane.topAnchor="24.0">
+         <children>
+            <Text fx:id="text" layoutX="16.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="97.3348817945639" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="35.431640625" />
+            <TextField fx:id="input" layoutX="121.0" layoutY="29.0" prefHeight="29.0" prefWidth="482.0" AnchorPane.leftAnchor="121.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="29.0" />
+            <Button fx:id="saveBtn" layoutX="530.0" layoutY="67.0" mnemonicParsing="false" onAction="#save" prefHeight="26.0" prefWidth="65.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="67.0" />
+            <Text fx:id="hazardsContainedText" layoutX="16.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hazards contained: " wrappingWidth="460.5391740919272" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="407.4608259080728" AnchorPane.topAnchor="99.431640625" />
+            <Text fx:id="hazardsNotContainedText" layoutX="16.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hazards not contained: " wrappingWidth="460.5391740919272" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="407.4608259080728" AnchorPane.topAnchor="117.431640625" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

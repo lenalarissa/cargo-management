@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_372" class="java.beans.XMLDecoder">
+ <object class="cargoManagement.CargoStoragePojo" id="CargoStoragePojo0">
+  <void class="cargoManagement.CargoStoragePojo" method="getField">
+   <string>customerManagementPojo</string>
+   <void method="set">
+    <object idref="CargoStoragePojo0"/>
+    <object class="customerManagement.CustomerManagementPojo" id="CustomerManagementPojo0">
+     <void class="customerManagement.CustomerManagementPojo" method="getField">
+      <string>customers</string>
+      <void method="set">
+       <object idref="CustomerManagementPojo0"/>
+       <object class="java.util.HashSet">
+        <void method="add">
+         <object class="customerManagement.CustomerPojo" id="CustomerPojo0">
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>name</string>
+           <void method="set">
+            <object idref="CustomerPojo0"/>
+            <string>Bettina</string>
+           </void>
+          </void>
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>numOfCargos</string>
+           <void method="set">
+            <object idref="CustomerPojo0"/>
+            <int>3</int>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="customerManagement.CustomerPojo" id="CustomerPojo1">
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>name</string>
+           <void method="set">
+            <object idref="CustomerPojo1"/>
+            <string>Barbara</string>
+           </void>
+          </void>
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>numOfCargos</string>
+           <void method="set">
+            <object idref="CustomerPojo1"/>
+            <int>1</int>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="customerManagement.CustomerPojo" id="CustomerPojo2">
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>name</string>
+           <void method="set">
+            <object idref="CustomerPojo2"/>
+            <string>Bela</string>
+           </void>
+          </void>
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>numOfCargos</string>
+           <void method="set">
+            <object idref="CustomerPojo2"/>
+            <int>1</int>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="customerManagement.CustomerPojo" id="CustomerPojo3">
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>name</string>
+           <void method="set">
+            <object idref="CustomerPojo3"/>
+            <string>Bob</string>
+           </void>
+          </void>
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>numOfCargos</string>
+           <void method="set">
+            <object idref="CustomerPojo3"/>
+            <int>1</int>
+           </void>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void class="cargoManagement.CargoStoragePojo" method="getField">
+   <string>capacity</string>
+   <void method="set">
+    <object idref="CargoStoragePojo0"/>
+    <int>10</int>
+   </void>
+  </void>
+  <void class="cargoManagement.CargoStoragePojo" method="getField">
+   <string>cargos</string>
+   <void method="set">
+    <object idref="CargoStoragePojo0"/>
+    <object class="java.util.HashMap">
+     <void method="put">
+      <int>0</int>
+      <object class="cargoManagement.CargoPojo" id="CargoPojo0">
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>cargoClass</string>
+        <void method="set">
+         <object idref="CargoPojo0"/>
+         <string>DryBulkCargo</string>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>customerPojo</string>
+        <void method="set">
+         <object idref="CargoPojo0"/>
+         <object class="customerManagement.CustomerPojo" id="CustomerPojo4">
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>name</string>
+           <void method="set">
+            <object idref="CustomerPojo4"/>
+            <string>Bettina</string>
+           </void>
+          </void>
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>numOfCargos</string>
+           <void method="set">
+            <object idref="CustomerPojo4"/>
+            <int>3</int>
+           </void>
+          </void>
+         </object>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>insertDate</string>
+        <void method="set">
+         <object idref="CargoPojo0"/>
+         <object class="java.util.Date">
+          <long>1691237003064</long>
+         </object>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>value</string>
+        <void method="set">
+         <object idref="CargoPojo0"/>
+         <string>55.76</string>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>hazards</string>
+        <void method="set">
+         <object idref="CargoPojo0"/>
+         <object class="java.util.HashSet">
+          <void method="add">
+           <object class="java.lang.Enum" method="valueOf">
+            <class>cargo.Hazard</class>
+            <string>toxic</string>
+           </object>
+          </void>
+         </object>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>grainSize</string>
+        <void method="set">
+         <object idref="CargoPojo0"/>
+         <int>10</int>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>lastInspectionDate</string>
+        <void method="set">
+         <object idref="CargoPojo0"/>
+         <object class="java.util.Date">
+          <long>1691237069516</long>
+         </object>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="put">
+      <int>1</int>
+      <object class="cargoManagement.CargoPojo" id="CargoPojo1">
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>cargoClass</string>
+        <void method="set">
+         <object idref="CargoPojo1"/>
+         <string>UnitisedCargo</string>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>customerPojo</string>
+        <void method="set">
+         <object idref="CargoPojo1"/>
+         <object class="customerManagement.CustomerPojo" id="CustomerPojo5">
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>name</string>
+           <void method="set">
+            <object idref="CustomerPojo5"/>
+            <string>Bob</string>
+           </void>
+          </void>
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>numOfCargos</string>
+           <void method="set">
+            <object idref="CustomerPojo5"/>
+            <int>1</int>
+           </void>
+          </void>
+         </object>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>storageLocation</string>
+        <void method="set">
+         <object idref="CargoPojo1"/>
+         <int>1</int>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>insertDate</string>
+        <void method="set">
+         <object idref="CargoPojo1"/>
+         <object class="java.util.Date">
+          <long>1691237012303</long>
+         </object>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>value</string>
+        <void method="set">
+         <object idref="CargoPojo1"/>
+         <string>1</string>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>hazards</string>
+        <void method="set">
+         <object idref="CargoPojo1"/>
+         <object class="java.util.HashSet">
+          <void method="add">
+           <object class="java.lang.Enum" method="valueOf">
+            <class>cargo.Hazard</class>
+            <string>explosive</string>
+           </object>
+          </void>
+         </object>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>fragile</string>
+        <void method="set">
+         <object idref="CargoPojo1"/>
+         <boolean>true</boolean>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="put">
+      <int>3</int>
+      <object class="cargoManagement.CargoPojo" id="CargoPojo2">
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>cargoClass</string>
+        <void method="set">
+         <object idref="CargoPojo2"/>
+         <string>LiquidBulkAndUnitisedCargo</string>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>customerPojo</string>
+        <void method="set">
+         <object idref="CargoPojo2"/>
+         <object class="customerManagement.CustomerPojo" id="CustomerPojo6">
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>name</string>
+           <void method="set">
+            <object idref="CustomerPojo6"/>
+            <string>Bela</string>
+           </void>
+          </void>
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>numOfCargos</string>
+           <void method="set">
+            <object idref="CustomerPojo6"/>
+            <int>1</int>
+           </void>
+          </void>
+         </object>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>storageLocation</string>
+        <void method="set">
+         <object idref="CargoPojo2"/>
+         <int>3</int>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>insertDate</string>
+        <void method="set">
+         <object idref="CargoPojo2"/>
+         <object class="java.util.Date">
+          <long>1691237035280</long>
+         </object>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>value</string>
+        <void method="set">
+         <object idref="CargoPojo2"/>
+         <string>1</string>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>hazards</string>
+        <void method="set">
+         <object idref="CargoPojo2"/>
+         <object class="java.util.HashSet"/>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>fragile</string>
+        <void method="set">
+         <object idref="CargoPojo2"/>
+         <boolean>true</boolean>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>pressurized</string>
+        <void method="set">
+         <object idref="CargoPojo2"/>
+         <boolean>true</boolean>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>lastInspectionDate</string>
+        <void method="set">
+         <object idref="CargoPojo2"/>
+         <object class="java.util.Date">
+          <long>1691237153565</long>
+         </object>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="put">
+      <int>4</int>
+      <object class="cargoManagement.CargoPojo" id="CargoPojo3">
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>cargoClass</string>
+        <void method="set">
+         <object idref="CargoPojo3"/>
+         <string>LiquidAndDryBulkCargo</string>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>customerPojo</string>
+        <void method="set">
+         <object idref="CargoPojo3"/>
+         <object class="customerManagement.CustomerPojo" id="CustomerPojo7">
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>name</string>
+           <void method="set">
+            <object idref="CustomerPojo7"/>
+            <string>Bettina</string>
+           </void>
+          </void>
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>numOfCargos</string>
+           <void method="set">
+            <object idref="CustomerPojo7"/>
+            <int>3</int>
+           </void>
+          </void>
+         </object>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>storageLocation</string>
+        <void method="set">
+         <object idref="CargoPojo3"/>
+         <int>4</int>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>insertDate</string>
+        <void method="set">
+         <object idref="CargoPojo3"/>
+         <object class="java.util.Date">
+          <long>1691237051242</long>
+         </object>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>value</string>
+        <void method="set">
+         <object idref="CargoPojo3"/>
+         <string>912872.8282</string>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>hazards</string>
+        <void method="set">
+         <object idref="CargoPojo3"/>
+         <object class="java.util.HashSet"/>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>grainSize</string>
+        <void method="set">
+         <object idref="CargoPojo3"/>
+         <int>66</int>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>lastInspectionDate</string>
+        <void method="set">
+         <object idref="CargoPojo3"/>
+         <object class="java.util.Date">
+          <long>1691237071909</long>
+         </object>
+        </void>
+       </void>
+      </object>
+     </void>
+     <void method="put">
+      <int>5</int>
+      <object class="cargoManagement.CargoPojo" id="CargoPojo4">
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>cargoClass</string>
+        <void method="set">
+         <object idref="CargoPojo4"/>
+         <string>LiquidAndDryBulkCargo</string>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>customerPojo</string>
+        <void method="set">
+         <object idref="CargoPojo4"/>
+         <object class="customerManagement.CustomerPojo" id="CustomerPojo8">
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>name</string>
+           <void method="set">
+            <object idref="CustomerPojo8"/>
+            <string>Bettina</string>
+           </void>
+          </void>
+          <void class="customerManagement.CustomerPojo" method="getField">
+           <string>numOfCargos</string>
+           <void method="set">
+            <object idref="CustomerPojo8"/>
+            <int>3</int>
+           </void>
+          </void>
+         </object>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>storageLocation</string>
+        <void method="set">
+         <object idref="CargoPojo4"/>
+         <int>5</int>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>insertDate</string>
+        <void method="set">
+         <object idref="CargoPojo4"/>
+         <object class="java.util.Date">
+          <long>1691237056515</long>
+         </object>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>value</string>
+        <void method="set">
+         <object idref="CargoPojo4"/>
+         <string>912872.8282</string>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>hazards</string>
+        <void method="set">
+         <object idref="CargoPojo4"/>
+         <object class="java.util.HashSet"/>
+        </void>
+       </void>
+       <void class="cargoManagement.CargoPojo" method="getField">
+        <string>grainSize</string>
+        <void method="set">
+         <object idref="CargoPojo4"/>
+         <int>66</int>
+        </void>
+       </void>
+      </object>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void class="cargoManagement.CargoStoragePojo" method="getField">
+   <string>usedStorageLocations</string>
+   <void method="set">
+    <object idref="CargoStoragePojo0"/>
+    <array class="boolean" length="10">
+     <void index="0">
+      <boolean>true</boolean>
+     </void>
+     <void index="1">
+      <boolean>true</boolean>
+     </void>
+     <void index="3">
+      <boolean>true</boolean>
+     </void>
+     <void index="4">
+      <boolean>true</boolean>
+     </void>
+     <void index="5">
+      <boolean>true</boolean>
+     </void>
+    </array>
+   </void>
+  </void>
+ </object>
+</java>
